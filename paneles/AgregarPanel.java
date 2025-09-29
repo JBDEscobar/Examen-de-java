@@ -31,7 +31,7 @@ public class AgregarPanel extends JPanel {
     private void configurarEventos(AgregarTarea controlAgregar, TareasPanel tareasPanel) {
         btnAgregar.addActionListener(e -> {
             controlAgregar.agregarTareaDesdeCampo(campoTexto);
-            tareasPanel.mostrarTareas(); // Actualizar después de agregar
+            tareasPanel.mostrarTareas(); 
         });
     }
 }

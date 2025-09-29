@@ -11,7 +11,7 @@ public class ControladorTareas {
         this.baseDatos = new GestorDatos();
     }
     
-    // Métodos existentes...
+
     public void agregarTarea(String titulo, String descripcion) {
         Tarea nuevaTarea = new Tarea(titulo, descripcion);
         baseDatos.guardarTarea(nuevaTarea);
@@ -32,7 +32,7 @@ public class ControladorTareas {
         baseDatos.eliminarTarea(indice);
     }
     
-    // NUEVO: Obtener tareas completadas
+  
     public List<Tarea> obtenerTareasCompletadas() {
         return baseDatos.obtenerTareasCompletadas();
     }

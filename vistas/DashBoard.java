@@ -1,5 +1,4 @@
 package vistas;
-
 import javax.swing.JFrame;
 import control.ControladorTareas;
 import control.AgregarTarea;
@@ -43,16 +42,12 @@ public class DashBoard extends JFrame {
     }
     
     private void configurarEventos() {
-        // Botón para ver tareas completadas
+    
         headerPanel.getBtnVerCompletadas().addActionListener(e -> {
-            // Por ahora solo muestra un mensaje
-            int completadas = controlador.obtenerTareasCompletadas().size();
+           int completadas = controlador.obtenerTareasCompletadas().size();
             javax.swing.JOptionPane.showMessageDialog(this, 
                 "Tareas completadas: " + completadas);
         });
     }
     
-    public static void main(String[] args) {
-        new DashBoard();
-    }
 }
